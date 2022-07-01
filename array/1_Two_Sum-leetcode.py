@@ -11,11 +11,11 @@ class Solution:
                 return [index,lookup[num]]
             else:
                 lookup[target-num] = index
+            print(lookup)
 
-            
 if __name__ == '__main__':
     obj = Solution()
-    ip = [2,7,11,15]
+    ip = [2, 7, 11, 15]
     target = 9
-    ans = obj.twoSum(ip,target)
+    ans = obj.twoSum(ip, target)
     print(ans)
