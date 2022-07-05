@@ -24,3 +24,10 @@ class Solution:
             node = node.next
             
         return None
+
+
+
+if __name__ == '__main__':
+    obj = Solution()
+    ans = obj.
+    print(ans)

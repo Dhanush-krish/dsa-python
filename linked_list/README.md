@@ -30,3 +30,4 @@ reference
 *   https://leetcode.com/explore/learn/card/linked-list/
 *   https://www.programiz.com/dsa/linked-list
 *   https://realpython.com/linked-lists-python/
+*   https://leetcode.com/discuss/study-guide/1800120/become-master-in-linked-list
