@@ -30,15 +30,6 @@ class Solution:
             current.next = prev
             prev = current
             current = nxt
-        
-        # while(head):
-        #     print(head.val, end="-> ")
-        #     head = head.next
-        # print()   
-        # while(prev):
-        #     print(prev.val, end="-> ")
-        #     prev = prev.next
-        # print()
             
         #check for palindrome
         left,right = head,prev
