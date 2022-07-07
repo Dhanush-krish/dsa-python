@@ -24,9 +24,3 @@ class Solution:
         
         node.val = node.next.val
         node.next = node.next.next
-
-
-if __name__ == '__main__':
-    obj = Solution()
-    ans = obj.
-    print(ans)
