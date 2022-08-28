@@ -11,30 +11,31 @@ def dfs (graph,node,destination,visited):
     return 0
 
 graph = dict()
+N = int(input())
+for _ in range(N):
+    graph[int(input())] = []
 
-# N = int(input())
-# for _ in range(N):
-#     graph[int(input())] = []
+E = int(input())
+for _ in range(E):
+    u,v = map(int,input().split())
+    graph[u].append(v)
 
-# E = int(input())
-# for _ in range(E):
-#     u,v = map(int,input().split())
-#     graph[u].append(v)
-
-# root = int(input())
-# destination = int(input())
+root = int(input())
+destination = int(input())
 visited = set()
-root = 7
-destination = 9
-graph = {
-            2: [9], 
-            5: [], 
-            7: [2,9], 
-            9: [5]
-        }
-
-
 print(dfs(graph,root,destination,visited))
+
+# root = 7
+# destination = 9
+# graph = {
+#             2: [9], 
+#             5: [], 
+#             7: [2,9], 
+#             9: [5]
+#         }
+
+
+
 
 
 """
