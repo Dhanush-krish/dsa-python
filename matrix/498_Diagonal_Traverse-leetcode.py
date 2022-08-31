@@ -3,6 +3,7 @@
 
 
 
+import re
 from typing import *
 
 
@@ -11,29 +12,47 @@ from typing import *
 class Solution:
     def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
         ROW, COL = len(mat), len(mat[0])
-        times = 1
+        up = True
+        result, elements  = [], 0
+        curr_row, curr_col = 0, 0
         
-        # for row in range(ROW):
-        #     col = 0
-        #     for r1 in range(row, -1, -1):
-        #         if times %2 == 1:
-        #             print((r1, col), end= "")
-        #         else:
-        #             print((col, r1), end= "")
-        #         col += 1
-        #     times += 1
-        #     print()
-        
-        for col in range(1,COL):
-            col1 = 0
-            for r1 in range(2, -2+col, -1):
-                if times %2 == 0:
-                    print((r1, col+col1), end= "")
+        while(elements != ROW*COL):
+            
+            if(up):
+                
+                while(curr_row >=0 and curr_col < COL):
+                    result.append(mat[curr_row][curr_col])
+                    elements += 1
+                    
+                    curr_row -= 1
+                    curr_col += 1
+                
+                if curr_col == COL:
+                    curr_row += 2
+                    curr_col -= 1
                 else:
-                    print((col+col1, r1), end= "")
-                col1 += 1
-            times += 1
-            print()
+                    curr_row += 1
+                
+                up = False
+            
+            else:
+                
+                while(curr_col >= 0 and curr_row < ROW):
+                    result.append(mat[curr_row][curr_col])
+                    elements += 1
+                    
+                    curr_col -= 1
+                    curr_row += 1
+                
+                if curr_row == ROW:
+                    curr_row  -= 1
+                    curr_col += 2 
+                else:
+                    curr_col += 1
+                    
+                up = True
+        
+        return result
 
 
 
