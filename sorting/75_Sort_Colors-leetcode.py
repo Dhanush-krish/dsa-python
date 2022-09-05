@@ -25,6 +25,19 @@ class Solution:
                 
         return nums
     
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        length = len(nums)
+        
+        for index in range(length):
+            min_idx = index
+            
+            for index2 in range(index+1, length):
+                if nums[index2] < nums[min_idx]:
+                    min_idx = index2
+            nums[index], nums[min_idx] = nums[min_idx], nums[index]
+        
+    
 
 
 if __name__ == '__main__':
