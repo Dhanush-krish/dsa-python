@@ -3,3 +3,4 @@ env
 /dynamic_programming/Princess_Farida-leetcode.py
 /sorting/minimum_chairs_required.py
 /walmart/
+.env
