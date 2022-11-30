@@ -1,7 +1,7 @@
 #   https://leetcode.com/problems/find-players-with-zero-or-one-losses/
 
 # TC => O(N)
-# SC => 
+# SC => )(N)
 
 from collections import deque
 from typing import *
