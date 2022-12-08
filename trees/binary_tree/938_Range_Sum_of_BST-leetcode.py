@@ -1,7 +1,8 @@
 #   https://leetcode.com/problems/range-sum-of-bst/description/
 
-# TC => 
-# SC => 
+# TC => O(n)
+# SC => O(n)
+# where n is the number of nodes
 
 
 class TreeNode:
