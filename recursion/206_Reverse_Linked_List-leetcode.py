@@ -11,14 +11,14 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if head is None: return None
-        nxt = head.next
-        print(node.val, end=" => ")
-        head.next = self.reverseList(head.next)
+# class Solution:
+#     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+#         if head is None: return None
+#         nxt = head.next
+#         print(nxt.val, end=" => ")
+#         head.next = self.reverseList(head.next)
         
-        return node
+#         return nxt
 
 if __name__ == '__main__':
     
@@ -31,9 +31,9 @@ if __name__ == '__main__':
     node2.next = node3
     node3.next = node4
     
-    obj = Solution()
-    ans = obj.reverseList(node1)
+    # obj = Solution()
+    # ans = obj.reverseList(node1)
     
-    while(ans):
-        print(ans.val, end=" => ")
-        ans = ans.next
+    while(node1):
+        print(node1.val, end=" => ")
+        node1 = node1.next

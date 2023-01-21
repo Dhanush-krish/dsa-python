@@ -3,10 +3,14 @@
 *   dfs
     * uses stack
     * easy to implement
+    * TS = O(N + E) where N is the number of nodes and E is the number of edges
+    * SC = O(N)
 *   bfs
     * uses queue 
     * no recursive approach
     * used in shortest path algorithm
+    * TS = O(N + E) where N is the number of nodes and E is the number of edges
+    * SC = O(N)
 *   union find
     * finds components (nodes) are connected
 *   directed graph => cache is not required

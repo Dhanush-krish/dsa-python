@@ -1,0 +1,10 @@
+References:
+* Monotonic increasing/decreasing stack: https://leetcode.com/discuss/post/2347639/a-comprehensive-guide-and-template-for-m-irii/
+
+
+|  Problem           |  Stack Type                  |  Operator in while loop |  Assignment Position  |
+|--------------------|------------------------------|-------------------------|-----------------------|
+|  next greater      |  decreasing (equal allowed)  |  stackTop < current     |  inside while loop    |
+|  previous greater  |  decreasing (strict)         |  stackTop <= current    |  outside while loop   |
+|  next smaller      |  increasing (equal allowed)  |  stackTop > current     |  inside while loop    |
+|  previous smaller  |  increasing (strict)         |  stackTop >= current    |  outside while loop   |
