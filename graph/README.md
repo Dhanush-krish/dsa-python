@@ -16,6 +16,14 @@
 *   directed graph => cache is not required
 *   undirected graph => cache is required to avoid infinite loop
 
+Order 
+- DFS
+- BFS
+- UnionFind
+- Single Source Shortest path (Dijkstra's Algorithm (non negative weights), Bellman Ford Algorithm (including negative weights))
+- Kahn's Algorithm
+- Spanning Tree (Kruskal's Algorithm, Prim's Algorithm)
+
 
 ### reference
 *   https://youtu.be/tWVWeAqZ0WU
