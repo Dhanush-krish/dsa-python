@@ -2,8 +2,8 @@
 * overlapping subproblems
 * optimal substructure
 #### two ways to implement a DP algorithm:
-* Bottom-up, also known as tabulation. implemented with a recursive function and hash map
-* Top-down, also known as memoization.  bottom-up is implemented with nested for loops and an array.
+* Bottom-up, also known as tabulation. implemented with nested for loops and an array. 
+* Top-down, also known as memoization. implemented with a recursive function and hash map
 
 #### The FrameworkTo solve a DP problem, we need to combine 3 things:
 
