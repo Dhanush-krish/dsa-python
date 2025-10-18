@@ -1,4 +1,7 @@
-#   https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/930/
+#   https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/928/
+
+
+
 
 from typing import *
 
@@ -8,11 +11,27 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+        
 
 class Solution:
-    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        pass
-    
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        
+        if root is None: return []
+        
+        stack = [root]
+        result = []
+        
+        while(stack):
+            node = stack.pop()
+            
+            result.append(node.val)
+            
+            if node.right is not None: stack.append(node.right)
+            if node.left is not None: stack.append(node.left)
+        
+        
+        return result
+
 
 
 if __name__ == '__main__':
@@ -34,5 +53,5 @@ if __name__ == '__main__':
     node5.left = node6
     node5.right = node7
     
-    ans = obj.postorderTraversal(node1)
+    ans = obj.preorderTraversal(node1)
     print(ans)

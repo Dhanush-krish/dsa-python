@@ -1,5 +1,5 @@
 '''
-Choices → what moves/actions can I take? -> rob or leave
+Choices → what moves/actions can I take? -> buy, sell
 
 State → what information uniquely defines a subproblem? money
 
@@ -9,3 +9,17 @@ Base Case → what’s the simplest answer I know immediately? at 1 max is 1, at
 
 Answer → what state(s) give me the final solution? 
 '''
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+
+        max_profit = 0
+        min_sofar = prices[0]
+
+        for val in prices:
+            max_profit = max(max_profit, val - min_sofar)
+            min_sofar = min(min_sofar, val)
+        
+        return max_profit
+        
+                                                                                                                                                                                                       

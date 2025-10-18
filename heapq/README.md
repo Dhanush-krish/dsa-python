@@ -30,3 +30,6 @@ There are two kinds of heaps: Max Heap and Min Heap.
 1. Heap Sort
 2. The Top-K problem
 3. The K-th element
+
+### Reference: 
+* https://visualgo.net/en/heap?slide=1
